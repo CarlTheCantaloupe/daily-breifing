@@ -5,7 +5,7 @@ for x in range(1):
   i = random.randint(0,13) #Finding a random number for the icons
 
 for x in range(1):
-  n = random.randint(0,8) #Finding a random number for the themes
+  n = random.randint(0,9) #Finding a random number for the themes
 
 themes = [
 'Bazik',
@@ -16,6 +16,7 @@ themes = [
 'Vimix',
 'Yaru',
 'Mojave',
+'Qogir',
 'Prof-GNOME'] #Listing all the themes we have to choose from
 
 icons = [
@@ -39,6 +40,9 @@ chosenTheme = themes[n] #This variable is the chosen GTK theme
 
 if chosenTheme == 'Nordic':
  chosenIcon = 'Zafiro' #The Nordic theme only goes with the Zafiro icon set, so we override the computer's choice of icons if the chosen theme is Nordic.
+
+if chosenTheme ==  'Qogir':
+  chosenIcon = 'Qogir' #The Qogir icon theme only goes with the Qogir GTK theme, so if the Qogir GTK theme gets selected, the Qogir icons will accompany.
 
 while chosenTheme == 'Pop' and chosenIcon == 'Zafiro':
   for x in range(1):
