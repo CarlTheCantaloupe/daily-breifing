@@ -75,12 +75,8 @@ outputThemes = "Today's GTK and Shell Theme: " + chosenTheme
 outputIcons = "Today's Icon Theme: " + chosenIcon
 
 toDo = ''' 
-Chemistry Worksheet on salt preparation
-French Finishing Off - check on firefly
-Geography Topic 4 - in advance
 Maths Prep - 😭
 Art - Dazzle designs without colour
-English - today's work 😭
 '''
 # Insert the list of things to do here
 
