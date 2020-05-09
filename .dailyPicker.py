@@ -75,8 +75,7 @@ outputThemes = "Today's GTK and Shell Theme: " + chosenTheme
 outputIcons = "Today's Icon Theme: " + chosenIcon
 
 toDo = ''' 
-Maths Prep - 😭
-Art - Dazzle designs without colour
+Make Cubium scripts.
 '''
 # Insert the list of things to do here
 
