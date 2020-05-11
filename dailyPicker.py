@@ -16,7 +16,7 @@ themes = [
     'Flat-Green',
     'Vimix',
     'Yaru',
-    'Mojave',
+    'Catalina',
     'Qogir',
     'Prof-GNOME']  # Listing all the themes we have to choose from
 
@@ -34,7 +34,7 @@ icons = [
     'Vitas',
     'Zafiro',
     'Candy',
-    'Mojave']  # Listing all the icons we have to choose from
+    'Catalina']  # Listing all the icons we have to choose from
 
 chosenIcon = icons[i]  # This variable is the chosen icon theme
 chosenTheme = themes[n]  # This variable is the chosen GTK theme
