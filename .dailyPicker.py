@@ -75,7 +75,7 @@ outputThemes = "Today's GTK and Shell Theme: " + chosenTheme
 outputIcons = "Today's Icon Theme: " + chosenIcon
 
 toDo = ''' 
-Make Cubium scripts.
+Nothing outstanding!
 '''
 # Insert the list of things to do here
 
