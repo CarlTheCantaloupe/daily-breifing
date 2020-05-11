@@ -75,7 +75,11 @@ outputThemes = "Today's GTK and Shell Theme: " + chosenTheme
 outputIcons = "Today's Icon Theme: " + chosenIcon
 
 toDo = ''' 
-Nothing outstanding!
+Clean up debris from videos.
+Finish French weekly tasks.
+Latin weekly work.
+Music improvements.
+Choral Soc recording.
 '''
 # Insert the list of things to do here
 
