@@ -3,34 +3,27 @@
 # Importing the random module so that we can make random numbers.
 import random
 for x in range(1):
-    i = random.randint(0, 13)  # Finding a random number for the icons
+    i = random.randint(0, 10)  # Finding a random number for the icons
 
 for x in range(1):
-    n = random.randint(0, 9)  # Finding a random number for the themes
+    n = random.randint(0, 5)  # Finding a random number for the themes
 
 themes = [
-    'Bazik',
     'Materia-Purple',
-    'Nordic',
-    'Pop',
     'Flat-Green',
     'Vimix',
     'Yaru',
     'Catalina',
-    'Qogir',
     'Prof-GNOME']  # Listing all the themes we have to choose from
 
 icons = [
     'Flatery',
     'Marwaita',
-    'Numix',
     'Numix Circle',
     'Oranchelo',
     'Paper',
     'Papirus',
-    'Tela',
     'Tela Circle',
-    'Vimix',
     'Vitas',
     'Zafiro',
     'Candy',
@@ -38,25 +31,6 @@ icons = [
 
 chosenIcon = icons[i]  # This variable is the chosen icon theme
 chosenTheme = themes[n]  # This variable is the chosen GTK theme
-
-if chosenTheme == 'Nordic':
-    # The Nordic theme only goes with the Zafiro icon set, so we override the computer's choice of icons if the chosen theme is Nordic.
-    chosenIcon = 'Zafiro'
-
-if chosenTheme == 'Qogir':
-    # The Qogir icon theme only goes with the Qogir GTK theme, so if the Qogir GTK theme gets selected, the Qogir icons will accompany.
-    chosenIcon = 'Qogir'
-
-while chosenTheme == 'Pop' and chosenIcon == 'Zafiro':
-    for x in range(1):
-        i = random.randint(0, 14)
-
-    for x in range(1):
-        n = random.randint(0, 8)
-
-    chosenIcon = icons[i]
-    # Pop and Zafiro don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
-    chosenTheme = themes[n]
 
 while chosenTheme == 'Yaru' and chosenIcon == 'Zafiro':
     for x in range(1):
@@ -69,23 +43,32 @@ while chosenTheme == 'Yaru' and chosenIcon == 'Zafiro':
     # Yaru and Zafiro don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
     chosenTheme = themes[n]
 
+while chosenTheme == 'Catalina' and chosenIcon == 'Zafiro':
+    for x in range(1):
+        i = random.randint(0, 14)
+
+    for x in range(1):
+        n = random.randint(0, 8)
+
+    chosenIcon = icons[i]
+    # Catalina and Zafiro don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
+    chosenTheme = themes[n]
+
+while chosenTheme == 'Prof-GNOME' and chosenIcon == 'Zafiro':
+    for x in range(1):
+        i = random.randint(0, 14)
+
+    for x in range(1):
+        n = random.randint(0, 8)
+
+    chosenIcon = icons[i]
+    # Prof-GNOME and Zafiro don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
+    chosenTheme = themes[n]
+
 # Creating a nice human-readable string.
 outputThemes = "Today's GTK and Shell Theme: " + chosenTheme
 # Creating a nice human-readable string
 outputIcons = "Today's Icon Theme: " + chosenIcon
 
-toDo = ''' 
-Clean up debris from videos.
-Finish French weekly tasks.
-Latin weekly work.
-Music improvements.
-Choral Soc recording.
-'''
-# Insert the list of things to do here
-
-toDoFinal = "Things to do soon: " + toDo  # Create the todo string to be output
-
 print(outputThemes)
 print(outputIcons)  # Printing the results
-print()  # Empty line
-print(toDoFinal)  # Print the things I have to do
