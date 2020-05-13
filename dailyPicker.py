@@ -3,7 +3,7 @@
 # Importing the random module so that we can make random numbers.
 import random
 for x in range(1):
-    i = random.randint(0, 9)  # Finding a random number for the icons
+    i = random.randint(0, 8)  # Finding a random number for the icons
 
 for x in range(1):
     n = random.randint(0, 5)  # Finding a random number for the themes
@@ -20,7 +20,6 @@ icons = [
     'Flatery',
     'Marwaita',
     'Numix Circle',
-    'Oranchelo',
     'Papirus',
     'Tela Circle',
     'Vitas',
