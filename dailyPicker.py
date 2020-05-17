@@ -3,7 +3,7 @@
 # Importing the random module so that we can make random numbers.
 import random
 for x in range(1):
-    i = random.randint(0, 8)  # Finding a random number for the icons
+    i = random.randint(0, 7)  # Finding a random number for the icons
 
 for x in range(1):
     n = random.randint(0, 5)  # Finding a random number for the themes
@@ -22,7 +22,7 @@ icons = [
     'Numix Circle',
     'Papirus',
     'Tela Circle',
-    'Vitas',
+    # 'Vitas',       The idea for the Vitas icon theme is AMAZING, and it would look so great. It's a pity it lacks so many icons...
     'Zafiro',
     'Candy',
     'Catalina']  # Listing all the icons we have to choose from
@@ -50,6 +50,17 @@ while chosenTheme == 'Catalina' and chosenIcon == 'Zafiro':
 
     chosenIcon = icons[i]
     # Catalina and Zafiro don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
+    chosenTheme = themes[n]
+
+while chosenTheme == 'Catalina' and chosenIcon == 'Candy':
+    for x in range(1):
+        i = random.randint(0, 14)
+
+    for x in range(1):
+        n = random.randint(0, 8)
+
+    chosenIcon = icons[i]
+    # Catalina and Candy don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
     chosenTheme = themes[n]
 
 while chosenTheme == 'Prof-GNOME' and chosenIcon == 'Zafiro':
