@@ -6,11 +6,11 @@ for x in range(1):
     i = random.randint(0, 7)  # Finding a random number for the icons
 
 for x in range(1):
-    n = random.randint(0, 5)  # Finding a random number for the themes
+    n = random.randint(0, 4)  # Finding a random number for the themes
 
 themes = [
     'Materia-Purple',
-    'Flat-Green',
+    # 'Flat-Green',     A great theme, a pity it had to go. Its shell theme felt a bit obnoxious and the grey felt like school trousers.
     'Vimix',
     'Yaru',
     'Catalina',
