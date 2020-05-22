@@ -3,43 +3,27 @@
 # Importing the random module so that we can make random numbers.
 import random
 for x in range(1):
-    i = random.randint(0, 7)  # Finding a random number for the icons
+    i = random.randint(0, 5)  # Finding a random number for the icons
 
 for x in range(1):
-    n = random.randint(0, 4)  # Finding a random number for the themes
+    n = random.randint(0, 3)  # Finding a random number for the themes
 
 themes = [
     'Materia-Purple',
-    # 'Flat-Green',     A great theme, a pity it had to go. Its shell theme felt a bit obnoxious and the grey felt like school trousers.
     'Vimix',
-    'Yaru',
     'Catalina',
     'Prof-GNOME']  # Listing all the themes we have to choose from
 
 icons = [
     'Flatery',
     'Marwaita',
-    'Numix Circle',
-    'Papirus',
     'Tela Circle',
-    # 'Vitas',       The idea for the Vitas icon theme is AMAZING, and it would look so great. It's a pity it lacks so many icons...
     'Zafiro',
     'Candy',
     'Catalina']  # Listing all the icons we have to choose from
 
 chosenIcon = icons[i]  # This variable is the chosen icon theme
 chosenTheme = themes[n]  # This variable is the chosen GTK theme
-
-while chosenTheme == 'Yaru' and chosenIcon == 'Zafiro':
-    for x in range(1):
-        i = random.randint(0, 14)
-
-    for x in range(1):
-        n = random.randint(0, 8)
-
-    chosenIcon = icons[i]
-    # Yaru and Zafiro don't go well together, so we redo the random selection process as long as they are the chosen pair. This can be expanded in the future.
-    chosenTheme = themes[n]
 
 while chosenTheme == 'Catalina' and chosenIcon == 'Zafiro':
     for x in range(1):
